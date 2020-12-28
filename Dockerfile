@@ -11,9 +11,11 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 RUN npm install -g ionic
+RUN npm install -g ng
 
 # Copy app source
 COPY . .
+RUN node_modules/.bin/ng build
 
 # Bind the port that the image will run on
 EXPOSE 8100
