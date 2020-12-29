@@ -15,5 +15,3 @@ spec:
     app: udagram-frontend
   sessionAffinity: None
   type: LoadBalancer
-status:
-  loadBalancer: {}
