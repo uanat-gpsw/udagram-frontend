@@ -15,7 +15,7 @@ RUN npm install -g ng
 
 # Copy app source
 COPY . .
-RUN node_modules/.bin/ng build
+RUN node_modules/.bin/ng build --prod
 
 # Bind the port that the image will run on
 EXPOSE 8100

@@ -10,7 +10,7 @@ spec:
   ports:
   - port: 8100
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8100
   selector:
     app: udagram-frontend
   sessionAffinity: None
