@@ -19,6 +19,5 @@ RUN node_modules/.bin/ng build
 
 # Bind the port that the image will run on
 EXPOSE 8100
-
 # Define the Docker image's behavior at runtime
-CMD ["ionic","serve","--external","--disable-host-check"]
+CMD ["ionic","serve","--external","--disableHostCheck","true","--host","0.0.0.0"]
