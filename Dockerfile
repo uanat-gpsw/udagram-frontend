@@ -15,10 +15,10 @@ RUN npm install -g ng
 
 # Copy app source
 COPY . .
-RUN node_modules/.bin/ng build --prod
+RUN node_modules/.bin/ng build
 
 # Bind the port that the image will run on
 EXPOSE 8100
 
 # Define the Docker image's behavior at runtime
-CMD ["ionic","serve"]
+CMD ["ionic","serve","--external"]
